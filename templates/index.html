@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container" id="container">
+	<div class="form-container search-container">
+		<form method="post">
+			<h1>Enter the text</h1>
+			<span>for finding result</span>
+			<textarea placeholder="Enter" name="inp" id="'inp" rows="8"></textarea>
+			<br>
+			<button type="submit">Search</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Everyone!</h1>
+				<p>Enter the text to start predicting</p>
+				<p>{{prediction}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock body %}
